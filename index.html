@@ -11,13 +11,17 @@
         }
         @media only screen and (max-device-width: 480px) {
             table[class=header-width] {
-                width:320px !important;
+                display: none !important;
+            }
+            table[class=mobile-header] {
+                display: block !important;
             }
             table[class=logo] {
-                width:320px !important;
+                width:290px !important;
+                text-align: center !important;
             }
             table[class=actions] {
-                width:320px !important;
+                width:290px !important;
             }
             table[class=content-width] {
                 width:320px !important;
@@ -35,41 +39,68 @@
     <table class="wrapper" cellpadding="0" cellspacing="0" border="0" width="100%"  background="https://novkioff.github.io/HTML-mail/img/pattern.png" bgcolor="#ffcbb3" style="font-size: 1px; line-height: normal; border-collapse: collapse; width: 100%; min-width: 320px; margin: 0; padding: 0;">
         <tr>
             <td align="middle" height="100%">
-                <table class="header-wrap" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#3a3a44" style="max-width: 100%; min-width: 320px; width: 100%; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
+                <table class="header-wrap" cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#3a3a44" style="max-width: 100%; min-width: 320px; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
                     <tr>
                         <td align="middle">
-                            <table class="header-width" cellspacing="0" cellpadding="0" border="0" width="600px" bgcolor="#3a3a44" style="max-width: 600px; width: 600px; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
+                            <table class="header-width" cellspacing="0" cellpadding="0" border="0" width="600px" bgcolor="#3a3a44" style="max-width: 600px; min-width: 320px; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
                                 <tr style="height: 15px;"></tr>
                                 <tr>
+                                    <td width="10px"></td>
                                     <td>
-                                        <table class="logo" cellspacing="0" cellpadding="0" border="0" width="300px" align="left" style="width: 300px; border-collapse: collapse; margin: 0; padding: 0;">
+                                        <table class="logo" cellspacing="0" cellpadding="0" border="0" width="290px" bgcolor="#3a3a44" align="left" style="display: inline-block; max-width: 300px; width: 290px; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
                                             <tr>
-                                                <td align="middle">
-                                                    <a href="#" title="Логотип" target="_blank" style="text-decoration: none;"><img src="https://novkioff.github.io/HTML-mail/img/logo.png" alt="Логотип" width="179" border="0" style="display: block; width: 179px; height: 25px;"></a>
+                                                <td width="290px">
+                                                    <a href="#" title="Логотип" target="_blank" style="text-decoration: none;"><img src="img/logo.png" alt="Логотип" width="179" border="0" style="display: block; width: 179px; height: 25px;"></a>
                                                 </td>
                                             </tr>
-                                            <tr style="height: 15px;"></tr>
                                         </table>
-                                        <table class="actions" cellspacing="0" cellpadding="0" border="0" width="300px" align="right" style="width: 300px; border-collapse: collapse; margin: 0; padding: 0;">
+                                        <table class="actions" cellspacing="0" cellpadding="0" border="0" width="290px" bgcolor="#3a3a44" align="right" style="display: inline-block; max-width: 300px; width: 290px; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
                                             <tr>
-                                                <td align="middle">
-                                                    <a href="#" title="Логотип" target="_blank" style="text-decoration: none;"><img src="https://novkioff.github.io/HTML-mail/img/stock.png" alt="Акции" width="110" style="display: block; width: 110px;"></a>
+                                                <td width="290px" align="right">
+                                                    <a href="#" title="Акции" target="_blank" style="text-decoration: none;"><img src="https://novkioff.github.io/HTML-mail/img/stock.png" alt="Кнопка акции" width="110" style="display: block; width: 110px;"></a>
                                                 </td>
                                             </tr>
-                                            <tr style="height: 15px;"></tr>
                                         </table>
                                     </td>
+                                    <td width="10px"></td>
+                                </tr>
+                                <tr style="height: 15px;"></tr>
+                            </table>
+                            <table class="mobile-header" cellspacing="0" cellpadding="0" border="0" width="290px" bgcolor="#3a3a44" align="middle" style="display: none; max-width: 290px; width: 290px; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
+                                <tr style="height: 15px;"></tr>
+                                <tr>
+                                    <td width="10px"></td>
+                                    <td>
+                                        <table class="logo" cellspacing="0" cellpadding="0" border="0" width="290px" bgcolor="#3a3a44" align="middle" style="display: inline-block; max-width: 300px; width: 290px; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
+                                            <tr>
+                                                <td width="290px" align="middle">
+                                                    <a href="#" title="Логотип" target="_blank" style="text-decoration: none;"><img src="img/logo.png" alt="Логотип" width="179" border="0" style="display: block; width: 179px; height: 25px;"></a>
+                                                </td>
+                                            </tr>
+                                            <tr style="height: 20px;"></tr>
+                                        </table>
+                                        <table class="actions" cellspacing="0" cellpadding="0" border="0" width="290px" bgcolor="#3a3a44" align="middle" style="display: inline-block; max-width: 300px; width: 290px; border-collapse: collapse; background-color: #3a3a44; margin: 0; padding: 0;">
+                                            <tr>
+                                                <td width="290px" align="middle">
+                                                    <a href="#" title="Акции" target="_blank" style="text-decoration: none;"><img src="https://novkioff.github.io/HTML-mail/img/stock.png" alt="Кнопка акции" width="110" style="display: block; width: 110px;"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="10px"></td>
+                                </tr>
+                                <tr style="height: 15px;"></tr>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                 </table>
-                <table class="content-width" cellspacing="0" cellpadding="0" border="0" width="600px" bgcolor="#ffffff" style="max-width: 600px; width: 600px; border-collapse: collapse; background-color: #ffffff; margin: 0; padding: 0;">
+                <table class="content-width" cellspacing="0" cellpadding="0" border="0" width="600px" bgcolor="#ffffff" style="max-width: 600px; min-width: 320px; border-collapse: collapse; background-color: #ffffff; margin: 0; padding: 0;">
                     <tr>
                         <td>
-                            <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff" style="max-width: 100%; width: 100%; border-collapse: collapse; background-color: #ffffff; margin: 0; padding: 0;">
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#ffffff" style="max-width: 100%; min-width: 320px; border-collapse: collapse; background-color: #ffffff; margin: 0; padding: 0;">
                                 <tr>
-                                    <td height="244px" background="https://novkioff.github.io/HTML-mail/img/city.png" bgcolor="#ff7d41" align="middle" valign="top" style="background-color: #ff7d41;">
+                                    <td height="244px" background="https://novkioff.github.io/HTML-mail/img/city.png" bgcolor="#ff7d41" align="middle" valign="top" style="min-width: 320px; background-color: #ff7d41;">
                                         <h1 style="font-size: 22px; color: #ffffff; padding-top: 18px; font-family: Arial, Helvetica, sans-serif;">Лучшие цены на старте продаж!</h1>
                                     </td>
                                 </tr>
@@ -100,7 +131,7 @@
                                                         <p style="font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#000000; margin: 0; padding-bottom: 11px"><span style="font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#666666; line-height: 150%;">Застройщик:</span>ИСК "Мемфис"</p>
                                                         <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #000000; margin: 0; font-weight: bold; line-height: 150%;">от 1,4 до 6,3 млн &#x584;</p>
                                                         <p style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #63c741; margin: 0; padding-bottom: 25px; line-height: 150%;">+7 (499) 648-64-42</p>
-                                                        <a href="#" title="Подробнее" target="_blank" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #ffffff; font-size: 13px;"><img src="https://novkioff.github.io/HTML-mail/img/button.png" alt="button" border="0" style="display: block; width: 154px; height: 36px;"></a>
+                                                        <a href="#" title="Подробнее" target="_blank" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #ffffff; font-size: 13px;"><span style="width: 154px; height: 36px; color: #ffffff; background-color: #63c741; border-radius: 5px; padding-top: 11px; padding-bottom: 11px; padding-left: 40px; padding-right: 40px;">Подробнее</span></a>
                                                     </address>
                                                 </td>
                                             </tr>
@@ -140,7 +171,7 @@
                                                         <p style="font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#000000; margin: 0; padding-bottom: 11px"><span style="font-family: Arial, Helvetica, sans-serif; font-size:14px; color:#666666; line-height: 150%;">Застройщик:</span>ИСК "Мемфис"</p>
                                                         <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #000000; margin: 0; font-weight: bold; line-height: 150%;">от 1,4 до 6,3 млн &#x584;</p>
                                                         <p style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #63c741; margin: 0; padding-bottom: 25px; line-height: 150%;">+7 (499) 648-64-42</p>
-                                                        <a href="#" title="Подробнее" target="_blank" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #ffffff; font-size: 13px;"><img src="https://novkioff.github.io/HTML-mail/img/button.png" alt="button" border="0" style="display: block; width: 154px; height: 36px;"></a>
+                                                        <a href="#" title="Подробнее" target="_blank" style="font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: #ffffff; font-size: 13px;"><span style="width: 154px; height: 36px; color: #ffffff; background-color: #63c741; border-radius: 5px; padding-top: 11px; padding-bottom: 11px; padding-left: 40px; padding-right: 40px;">Подробнее</span></a>
                                                     </address>
                                                 </td>
                                             </tr>
